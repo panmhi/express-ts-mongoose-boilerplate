@@ -1,14 +1,18 @@
 # About
 
-This is a basic Node.js server setup with Express, Mongoose and TypeScript.
+This is a Node.js server setup with Express, Mongoose and TypeScript.
 
 TypeScript configuration can be found in `tsconfig.json` file.
 
 Package `ts-node-dev` is used to automatically re-start the server when code changes.
 
-All route handlers and controller functions are in `index.ts` file.
+## Code Refactoring
 
-For better refactored setup, see other branches.
+All route handlers are in `index.ts` file.
+
+Controller functions are refactored into `controllers` folder.
+
+For better setup that also refactors route, see branch refactor-setup-routes.
 
 # Getting Started
 

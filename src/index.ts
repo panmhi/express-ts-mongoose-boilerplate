@@ -1,7 +1,9 @@
 import express from 'express';
+import 'dotenv/config';
 import './db';
 
-import noteRouter from './routers/note';
+import noteRouter from '@/routers/note';
+import { PORT } from '@/utils/variables';
 
 // create a server
 const app = express();
@@ -22,6 +24,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/note', noteRouter);
 
 // listen to some port
-app.listen(8000, () => {
+app.listen(PORT, () => {
 	console.log('listening');
 });

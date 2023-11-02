@@ -1,11 +1,12 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
+import { MONGO_URI } from '@/utils/variables';
 
-mongoose.set("strictQuery", true);
+mongoose.set('strictQuery', true);
 mongoose
-  .connect("mongodb://127.0.0.1:27017/note-app")
-  .then(() => {
-    console.log("DB connected!");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+	.connect(MONGO_URI)
+	.then(() => {
+		console.log('db is connected');
+	})
+	.catch((err) => {
+		console.log('db connection failed: ', err);
+	});

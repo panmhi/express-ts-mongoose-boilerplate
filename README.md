@@ -8,11 +8,13 @@ Package `ts-node-dev` is used to automatically re-start the server when code cha
 
 ## Code Refactoring
 
-All route handlers are in `index.ts` file.
+Only basic setup in `index.ts` file.
 
 Controller functions are refactored into `controllers` folder.
 
-For better setup that also refactors route, see branch refactor-setup-routes.
+Route handlers are refactored into `routers` folder.
+
+For a complete setup with environment variables and path alias, see branch `ultimate-setup`.
 
 # Getting Started
 
